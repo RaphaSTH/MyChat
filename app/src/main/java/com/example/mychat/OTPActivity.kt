@@ -49,7 +49,7 @@ class OTPActivity : AppCompatActivity() {
                 override fun onVerificationFailed(p0: FirebaseException) {
                     dialog!!.dismiss()
                     finish()
-                    Toast.makeText(this@OTPActivity, getString(R.string.numero_invalido), Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this@OTPActivity, getString(R.string.invalid_phone_number), Toast.LENGTH_SHORT).show()
                 }
 
                 override fun onCodeSent(verifyId: String, forceResendingToken: PhoneAuthProvider.ForceResendingToken) {
@@ -58,12 +58,12 @@ class OTPActivity : AppCompatActivity() {
                     verificationId = verifyId
                     val imm = getSystemService(INPUT_METHOD_SERVICE) as InputMethodManager
                     imm.toggleSoftInput(InputMethodManager.SHOW_FORCED, 0)
-                    binding!!.otpView.requestFocus()
+                    binding!!.editOtpView.requestFocus()
                 }
             }).build()
 
         PhoneAuthProvider.verifyPhoneNumber(options)
-        binding!!.otpView.setOtpCompletionListener { otp ->
+        binding!!.editOtpView.setOtpCompletionListener { otp ->
             val credential = PhoneAuthProvider.getCredential(verificationId!!, otp)
             auth!!.signInWithCredential(credential).addOnCompleteListener { task ->
                 if (task.isSuccessful) {

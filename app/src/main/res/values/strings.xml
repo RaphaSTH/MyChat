@@ -4,15 +4,24 @@
     <string name="we_will_send_you_an">We will send you an</string>
     <string name="one_time_password">One Time Password</string>
     <string name="on_this_mobile_number">on this mobile Number…</string>
-    <string name="type_your_phone_number">Type your Phone Number</string>
+    <string name="type_your_phone_number">Ex: +5588912345678</string>
+    <string name="type_your_name">Type your Name</string>
     <string name="continuee">Continue</string>
-    <string name="verify_5588912345678">Verify +5588912345678</string>
+    <string name="next">Next</string>
+    <string name="setup_profile">Setup Profile</string>
+    <string name="verify_number">Verify…</string>
     <string name="enter_the_otp_code_to_verify_your_phone_number">Enter the OTP code to Verify your Phone Number
     </string>
     <string name="verify">Verify %1$s</string>
-    <string name="preencha_o_campo_acima">Preencha o campo acima!</string>
+    <string name="please_type_your_phone_number">Please, type your Phone Number!</string>
+    <string name="please_type_your_name">Please, type your Name!</string>
     <string name="failed">Failed!</string>
     <string name="phonenumber">phoneNumber</string>
     <string name="sending_otp">Sending OTP…</string>
-    <string name="numero_invalido">Número inválido!</string>
+    <string name="updating_profile">Updating Profile…</string>
+    <string name="invalid_phone_number">Invalid Phone Number!</string>
+    <string name="please_set_your_name_and_an_optional_profile_image">Please set your name and an optional Profile
+        Image
+    </string>
+    <string name="profile_information">Profile Information</string>
 </resources>

@@ -30,13 +30,13 @@ class VerificationActivity : AppCompatActivity() {
 
         supportActionBar?.hide()
         binding!!.editNumber.requestFocus()
-        binding!!.continueBtn.setOnClickListener {
+        binding!!.btnContinue.setOnClickListener {
             if(binding!!.editNumber.text.isNotEmpty()) {
                 val intent = Intent(this@VerificationActivity, OTPActivity::class.java)
                 intent.putExtra("phoneNumber", binding!!.editNumber.text.toString())
                 startActivity(intent)
             } else {
-                Toast.makeText(this@VerificationActivity, getString(R.string.preencha_o_campo_acima), Toast.LENGTH_SHORT).show()
+                Toast.makeText(this@VerificationActivity, getString(R.string.please_type_your_phone_number), Toast.LENGTH_SHORT).show()
             }
         }
 

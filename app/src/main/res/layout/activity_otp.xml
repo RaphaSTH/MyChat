@@ -17,7 +17,7 @@
             tools:ignore="ContentDescription"/>
     <TextView
             android:id="@+id/phoneLble"
-            android:text="@string/verify_5588912345678"
+            android:text="@string/verify_number"
             android:textAlignment="center"
             android:textSize="25sp"
             android:textStyle="bold|normal"
@@ -47,27 +47,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
             <com.mukesh.OtpView
-                    android:id="@+id/otp_view"
+                    android:id="@+id/editOtpView"
                     android:layout_gravity="center"
-                    android:layout_marginTop="5dp"
                     android:inputType="number"
                     android:itemBackground="@color/gray_200"
                     android:focusableInTouchMode="true"
                     app:OtpItemCount="6"
                     app:OtpLineColor="#AA8CFE"
                     app:OtpViewType="line"
-                    android:layout_marginBottom="15dp"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-            <Button
-                    android:id="@+id/continueBtn01"
-                    android:text="@string/continuee"
-                    android:textStyle="bold|normal"
-                    android:textSize="16sp"
-                    android:textAllCaps="false"
-                    android:backgroundTint="@color/black_100"
-                    android:layout_width="match_parent"
-                    android:textColor="@color/white"
                     android:layout_height="wrap_content"/>
         </LinearLayout>
     </androidx.cardview.widget.CardView>
