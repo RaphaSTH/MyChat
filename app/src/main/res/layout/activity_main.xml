@@ -1,18 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<LinearLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@color/gray_300"
+        android:orientation="vertical"
         tools:context=".MainActivity">
     <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Hello World!"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+            android:text="@string/app_name"
+            android:textSize="25sp"
+            android:textStyle="bold|normal"
+            android:textAlignment="center"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black_100"/>
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/solution"
+            android:textSize="13sp"
+            android:textStyle="bold|normal"
+            android:textAlignment="textStart"
+            android:layout_marginTop="1dp"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/black_100"/>
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginBottom="15dp"
+            android:background="@color/black_100"/>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="6dp">
+        <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/layoutRec"
+                tools:listitem="@layout/item_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>

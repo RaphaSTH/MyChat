@@ -19,9 +19,15 @@
     <string name="phonenumber">phoneNumber</string>
     <string name="sending_otp">Sending OTP…</string>
     <string name="updating_profile">Updating Profile…</string>
+    <string name="uploading_image">Uploading Image…</string>
     <string name="invalid_phone_number">Invalid Phone Number!</string>
     <string name="please_set_your_name_and_an_optional_profile_image">Please set your name and an optional Profile
         Image
     </string>
     <string name="profile_information">Profile Information</string>
+    <string name="solution">Ask your any question for Expert and get Solution for your Problem</string>
+    <string name="profile_name">Profile Name</string>
+    <string name="work_in_android_development_and_application_ui_design">Work in Android Development and Application UI
+        Design
+    </string>
 </resources>
